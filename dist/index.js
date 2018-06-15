@@ -425,14 +425,14 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":15}],3:[function(require,module,exports) {
-"use strict";
+},{"./cjs/react.production.min.js":15}],2:[function(require,module,exports) {
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -440,8 +440,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Card = function Card(props) {
   return _react2.default.createElement(
-    "div",
-    { className: "Card__container" },
+    'div',
+    { className: props.cssClass },
     props.children
   );
 };
@@ -471,7 +471,7 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":13}],5:[function(require,module,exports) {
+},{"react":13}],4:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -485,18 +485,18 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Image = function Image(props) {
-  return _react2.default.createElement("img", { src: props.src, alt: props.alt || "" });
+  return _react2.default.createElement("img", { src: props.src, className: props.cssClass, alt: props.alt || "" });
 };
 
 exports.default = Image;
-},{"react":13}],6:[function(require,module,exports) {
-"use strict";
+},{"react":13}],5:[function(require,module,exports) {
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -504,8 +504,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Layout = function Layout(props) {
   return _react2.default.createElement(
-    "div",
-    { className: "Layout__container" },
+    'div',
+    { className: props.cssClass },
     props.children
   );
 };
@@ -568,5 +568,5 @@ exports.Heading = _Heading2.default;
 exports.Image = _Image2.default;
 exports.Layout = _Layout2.default;
 exports.Paragraph = _Paragraph2.default;
-},{"./Components/Card":3,"./Components/Heading":4,"./Components/Image":5,"./Components/Layout":6,"./Components/Paragraph":7}]},{},[1], null)
+},{"./Components/Card":2,"./Components/Heading":4,"./Components/Image":4,"./Components/Layout":5,"./Components/Paragraph":7}]},{},[1], null)
 //# sourceMappingURL=/index.map
