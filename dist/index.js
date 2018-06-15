@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({18:[function(require,module,exports) {
+})({17:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -194,7 +194,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],19:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],15:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -266,7 +266,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],20:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -303,7 +303,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],12:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /** @license React v16.4.1
  * react.production.min.js
  *
@@ -417,7 +417,7 @@ var X = { Children: { map: function (a, b, e) {
     assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
-},{"object-assign":18,"fbjs/lib/invariant":19,"fbjs/lib/emptyObject":15,"fbjs/lib/emptyFunction":20}],10:[function(require,module,exports) {
+},{"object-assign":17,"fbjs/lib/invariant":18,"fbjs/lib/emptyObject":20,"fbjs/lib/emptyFunction":19}],13:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -425,7 +425,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":12}],3:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":15}],3:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -447,7 +447,7 @@ var Card = function Card(props) {
 };
 
 exports.default = Card;
-},{"react":10}],4:[function(require,module,exports) {
+},{"react":13}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -471,7 +471,7 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":10}],5:[function(require,module,exports) {
+},{"react":13}],5:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +489,7 @@ var Image = function Image(props) {
 };
 
 exports.default = Image;
-},{"react":10}],5:[function(require,module,exports) {
+},{"react":13}],6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -511,7 +511,7 @@ var Layout = function Layout(props) {
 };
 
 exports.default = Layout;
-},{"react":10}],7:[function(require,module,exports) {
+},{"react":13}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -533,7 +533,7 @@ var Paragraph = function Paragraph(props) {
 };
 
 exports.default = Paragraph;
-},{"react":10}],1:[function(require,module,exports) {
+},{"react":13}],1:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -568,5 +568,5 @@ exports.Heading = _Heading2.default;
 exports.Image = _Image2.default;
 exports.Layout = _Layout2.default;
 exports.Paragraph = _Paragraph2.default;
-},{"./Components/Card":3,"./Components/Heading":4,"./Components/Image":5,"./Components/Layout":5,"./Components/Paragraph":7}]},{},[1], null)
+},{"./Components/Card":3,"./Components/Heading":4,"./Components/Image":5,"./Components/Layout":6,"./Components/Paragraph":7}]},{},[1], null)
 //# sourceMappingURL=/index.map

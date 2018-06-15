@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Card = (props) =>
-  <div className="Card__container">
-    {props.children}
-  </div>;
+  <div className={props.cssClass}>{props.children}</div>;
 
 export default Card;
