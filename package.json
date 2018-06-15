@@ -2,12 +2,13 @@
   "name": "dropship",
   "version": "0.1.0",
   "description": "Simple React components to help bootstrap your next project.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/jasonrundell/dropship.git",
   "author": "jasonrundell <jason.rundell@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build index.js --no-minify --public-url /"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setupTests.js"
@@ -21,6 +22,7 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "parcel-bundler": "^1.9.0"
   }
 }
