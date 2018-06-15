@@ -5,7 +5,7 @@ import Layout from './Components/Layout';
 import Paragraph from './Components/Paragraph';
 
 export {
-  Card,   
+  Card,
   Heading,
   Image,
   Layout,
