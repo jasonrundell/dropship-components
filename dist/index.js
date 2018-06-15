@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({17:[function(require,module,exports) {
+})({13:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -194,7 +194,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],18:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],20:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -266,7 +266,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],19:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -303,7 +303,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],15:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 /** @license React v16.4.1
  * react.production.min.js
  *
@@ -417,7 +417,7 @@ var X = { Children: { map: function (a, b, e) {
     assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
-},{"object-assign":17,"fbjs/lib/invariant":18,"fbjs/lib/emptyObject":20,"fbjs/lib/emptyFunction":19}],13:[function(require,module,exports) {
+},{"object-assign":13,"fbjs/lib/invariant":14,"fbjs/lib/emptyObject":15,"fbjs/lib/emptyFunction":16}],9:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -425,7 +425,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":15}],2:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":11}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -447,7 +447,7 @@ var Card = function Card(props) {
 };
 
 exports.default = Card;
-},{"react":13}],4:[function(require,module,exports) {
+},{"react":9}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -471,7 +471,7 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":13}],4:[function(require,module,exports) {
+},{"react":9}],4:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +489,7 @@ var Image = function Image(props) {
 };
 
 exports.default = Image;
-},{"react":13}],5:[function(require,module,exports) {
+},{"react":9}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -511,7 +511,7 @@ var Layout = function Layout(props) {
 };
 
 exports.default = Layout;
-},{"react":13}],7:[function(require,module,exports) {
+},{"react":9}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -533,7 +533,7 @@ var Paragraph = function Paragraph(props) {
 };
 
 exports.default = Paragraph;
-},{"react":13}],1:[function(require,module,exports) {
+},{"react":9}],1:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -541,23 +541,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Paragraph = exports.Layout = exports.Image = exports.Heading = exports.Card = undefined;
 
-var _Card = require('./Components/Card');
+var _Card = require('./lib/components/Card');
 
 var _Card2 = _interopRequireDefault(_Card);
 
-var _Heading = require('./Components/Heading');
+var _Heading = require('./lib/components/Heading');
 
 var _Heading2 = _interopRequireDefault(_Heading);
 
-var _Image = require('./Components/Image');
+var _Image = require('./lib/components/Image');
 
 var _Image2 = _interopRequireDefault(_Image);
 
-var _Layout = require('./Components/Layout');
+var _Layout = require('./lib/components/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-var _Paragraph = require('./Components/Paragraph');
+var _Paragraph = require('./lib/components/Paragraph');
 
 var _Paragraph2 = _interopRequireDefault(_Paragraph);
 
@@ -568,5 +568,5 @@ exports.Heading = _Heading2.default;
 exports.Image = _Image2.default;
 exports.Layout = _Layout2.default;
 exports.Paragraph = _Paragraph2.default;
-},{"./Components/Card":2,"./Components/Heading":4,"./Components/Image":4,"./Components/Layout":5,"./Components/Paragraph":7}]},{},[1], null)
+},{"./lib/components/Card":3,"./lib/components/Heading":4,"./lib/components/Image":4,"./lib/components/Layout":5,"./lib/components/Paragraph":6}]},{},[1], null)
 //# sourceMappingURL=/index.map

@@ -13,11 +13,9 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./setupTests.js"
   },
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
-  },
   "devDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
