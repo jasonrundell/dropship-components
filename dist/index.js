@@ -194,7 +194,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],21:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],25:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -266,7 +266,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],23:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -417,7 +417,7 @@ var X = { Children: { map: function (a, b, e) {
     assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
-},{"object-assign":19,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":25,"fbjs/lib/emptyFunction":23}],15:[function(require,module,exports) {
+},{"object-assign":19,"fbjs/lib/invariant":25,"fbjs/lib/emptyObject":23,"fbjs/lib/emptyFunction":21}],15:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -527,7 +527,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Link = function Link(props) {
   return _react2.default.createElement(
     'a',
-    { href: props.href, className: props.cssClass },
+    { href: props.href, className: props.cssClass, onClick: props.onClick },
     props.children
   );
 };
