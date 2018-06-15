@@ -471,24 +471,6 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":9}],4:[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Image = function Image(props) {
-  return _react2.default.createElement("img", { src: props.src, className: props.cssClass, alt: props.alt || "" });
-};
-
-exports.default = Image;
 },{"react":9}],5:[function(require,module,exports) {
 'use strict';
 
@@ -539,7 +521,7 @@ exports.default = Paragraph;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Paragraph = exports.Layout = exports.Image = exports.Heading = exports.Card = undefined;
+exports.Paragraph = exports.Layout = exports.Heading = exports.Card = undefined;
 
 var _Card = require('./lib/components/Card');
 
@@ -548,10 +530,6 @@ var _Card2 = _interopRequireDefault(_Card);
 var _Heading = require('./lib/components/Heading');
 
 var _Heading2 = _interopRequireDefault(_Heading);
-
-var _Image = require('./lib/components/Image');
-
-var _Image2 = _interopRequireDefault(_Image);
 
 var _Layout = require('./lib/components/Layout');
 
@@ -563,10 +541,10 @@ var _Paragraph2 = _interopRequireDefault(_Paragraph);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//import Image from './lib/components/Image';
 exports.Card = _Card2.default;
 exports.Heading = _Heading2.default;
-exports.Image = _Image2.default;
 exports.Layout = _Layout2.default;
 exports.Paragraph = _Paragraph2.default;
-},{"./lib/components/Card":3,"./lib/components/Heading":4,"./lib/components/Image":4,"./lib/components/Layout":5,"./lib/components/Paragraph":6}]},{},[1], null)
+},{"./lib/components/Card":3,"./lib/components/Heading":4,"./lib/components/Layout":5,"./lib/components/Paragraph":6}]},{},[1], null)
 //# sourceMappingURL=/index.map
