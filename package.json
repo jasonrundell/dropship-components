@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "build": "parcel build index.js --no-minify --public-url /"
+    "build": "parcel build index.js --no-minify --no-cache --public-url /"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setupTests.js"
