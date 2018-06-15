@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({17:[function(require,module,exports) {
+})({19:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -194,7 +194,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],19:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],21:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -303,7 +303,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],15:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 /** @license React v16.4.1
  * react.production.min.js
  *
@@ -417,7 +417,7 @@ var X = { Children: { map: function (a, b, e) {
     assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
-},{"object-assign":17,"fbjs/lib/invariant":19,"fbjs/lib/emptyObject":21,"fbjs/lib/emptyFunction":23}],13:[function(require,module,exports) {
+},{"object-assign":19,"fbjs/lib/invariant":21,"fbjs/lib/emptyObject":25,"fbjs/lib/emptyFunction":23}],15:[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -425,7 +425,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":15}],3:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":17}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -447,7 +447,7 @@ var Card = function Card(props) {
 };
 
 exports.default = Card;
-},{"react":13}],5:[function(require,module,exports) {
+},{"react":15}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -471,7 +471,7 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":13}],7:[function(require,module,exports) {
+},{"react":15}],7:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +489,7 @@ var Image = function Image(props) {
 };
 
 exports.default = Image;
-},{"react":13}],9:[function(require,module,exports) {
+},{"react":15}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -511,7 +511,29 @@ var Layout = function Layout(props) {
 };
 
 exports.default = Layout;
-},{"react":13}],11:[function(require,module,exports) {
+},{"react":15}],11:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Link = function Link(props) {
+  return _react2.default.createElement(
+    'a',
+    { href: props.href, className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Link;
+},{"react":15}],13:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -533,13 +555,13 @@ var Paragraph = function Paragraph(props) {
 };
 
 exports.default = Paragraph;
-},{"react":13}],1:[function(require,module,exports) {
+},{"react":15}],1:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Paragraph = exports.Layout = exports.Image = exports.Heading = exports.Card = undefined;
+exports.Paragraph = exports.Link = exports.Layout = exports.Image = exports.Heading = exports.Card = undefined;
 
 var _Card = require('./lib/components/Card');
 
@@ -557,6 +579,10 @@ var _Layout = require('./lib/components/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
+var _Link = require('./lib/components/Link');
+
+var _Link2 = _interopRequireDefault(_Link);
+
 var _Paragraph = require('./lib/components/Paragraph');
 
 var _Paragraph2 = _interopRequireDefault(_Paragraph);
@@ -567,6 +593,7 @@ exports.Card = _Card2.default;
 exports.Heading = _Heading2.default;
 exports.Image = _Image2.default;
 exports.Layout = _Layout2.default;
+exports.Link = _Link2.default;
 exports.Paragraph = _Paragraph2.default;
-},{"./lib/components/Card":3,"./lib/components/Heading":5,"./lib/components/Image":7,"./lib/components/Layout":9,"./lib/components/Paragraph":11}]},{},[1], null)
+},{"./lib/components/Card":3,"./lib/components/Heading":5,"./lib/components/Image":7,"./lib/components/Layout":9,"./lib/components/Link":11,"./lib/components/Paragraph":13}]},{},[1], null)
 //# sourceMappingURL=/index.map
