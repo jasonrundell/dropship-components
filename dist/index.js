@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({"jwq+":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -194,7 +194,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-},{}],23:[function(require,module,exports) {
+},{}],"1wyv":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -248,7 +248,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],25:[function(require,module,exports) {
+},{}],"bVkD":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -266,7 +266,7 @@ if ('production' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],27:[function(require,module,exports) {
+},{}],"31j4":[function(require,module,exports) {
 "use strict";
 
 /**
@@ -303,7 +303,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],19:[function(require,module,exports) {
+},{}],"dDQ8":[function(require,module,exports) {
 /** @license React v16.4.1
  * react.production.min.js
  *
@@ -417,7 +417,7 @@ var X = { Children: { map: function (a, b, e) {
     assign: k } },
     Y = { default: X },
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
-},{"object-assign":21,"fbjs/lib/invariant":23,"fbjs/lib/emptyObject":25,"fbjs/lib/emptyFunction":27}],17:[function(require,module,exports) {
+},{"object-assign":"jwq+","fbjs/lib/invariant":"1wyv","fbjs/lib/emptyObject":"bVkD","fbjs/lib/emptyFunction":"31j4"}],"+UVH":[function(require,module,exports) {
 'use strict';
 
 if ('production' === 'production') {
@@ -425,7 +425,7 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":19}],3:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":"dDQ8"}],"Risu":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -447,7 +447,7 @@ var Card = function Card(props) {
 };
 
 exports.default = Card;
-},{"react":17}],5:[function(require,module,exports) {
+},{"react":"+UVH"}],"jYxe":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -471,7 +471,7 @@ var Heading = function Heading(props) {
 };
 
 exports.default = Heading;
-},{"react":17}],7:[function(require,module,exports) {
+},{"react":"+UVH"}],"0YAT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -489,7 +489,7 @@ var Image = function Image(props) {
 };
 
 exports.default = Image;
-},{"react":17}],9:[function(require,module,exports) {
+},{"react":"+UVH"}],"YK3C":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -511,7 +511,7 @@ var Layout = function Layout(props) {
 };
 
 exports.default = Layout;
-},{"react":17}],11:[function(require,module,exports) {
+},{"react":"+UVH"}],"/f3b":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -533,7 +533,7 @@ var Link = function Link(props) {
 };
 
 exports.default = Link;
-},{"react":17}],13:[function(require,module,exports) {
+},{"react":"+UVH"}],"T92y":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -555,7 +555,7 @@ var Paragraph = function Paragraph(props) {
 };
 
 exports.default = Paragraph;
-},{"react":17}],15:[function(require,module,exports) {
+},{"react":"+UVH"}],"R5Af":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -585,7 +585,7 @@ var UnorderedList = function UnorderedList(props) {
 };
 
 exports.default = UnorderedList;
-},{"react":17}],1:[function(require,module,exports) {
+},{"react":"+UVH"}],"Focm":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -630,5 +630,5 @@ exports.Layout = _Layout2.default;
 exports.Link = _Link2.default;
 exports.Paragraph = _Paragraph2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Card":3,"./lib/components/Heading":5,"./lib/components/Image":7,"./lib/components/Layout":9,"./lib/components/Link":11,"./lib/components/Paragraph":13,"./lib/components/UnorderedList":15}]},{},[1], null)
+},{"./lib/components/Card":"Risu","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Paragraph":"T92y","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
