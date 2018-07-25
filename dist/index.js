@@ -572,7 +572,7 @@ var UnorderedList = function UnorderedList(props) {
   var listItems = props.items.map(function (item) {
     return _react2.default.createElement(
       'li',
-      { key: item.toString() },
+      { key: item.toString(), className: props.cssClassChildren },
       item
     );
   });
