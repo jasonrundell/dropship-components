@@ -425,7 +425,29 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":"dDQ8"}],"Risu":[function(require,module,exports) {
+},{"./cjs/react.production.min.js":"dDQ8"}],"NOSF":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Button = function Button(props) {
+  return _react2.default.createElement(
+    'button',
+    { className: props.cssClass, onClick: props.onClick },
+    props.children
+  );
+};
+
+exports.default = Button;
+},{"react":"+UVH"}],"Risu":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -447,6 +469,28 @@ var Card = function Card(props) {
 };
 
 exports.default = Card;
+},{"react":"+UVH"}],"uv3A":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Form = function Form(props) {
+  return _react2.default.createElement(
+    'form',
+    { className: props.cssClass, onSubmit: props.onSubmit },
+    props.children
+  );
+};
+
+exports.default = Form;
 },{"react":"+UVH"}],"jYxe":[function(require,module,exports) {
 'use strict';
 
@@ -489,6 +533,64 @@ var Image = function Image(props) {
 };
 
 exports.default = Image;
+},{"react":"+UVH"}],"rTML":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var InputSubmit = function InputSubmit(props) {
+  return _react2.default.createElement('input', { type: 'submit', className: props.cssClass, name: props.inputName, value: props.inputValue });
+};
+
+exports.default = InputSubmit;
+},{"react":"+UVH"}],"vNob":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var InputText = function InputText(props) {
+  return _react2.default.createElement("input", { type: "text", className: props.cssClass, name: props.inputName, value: props.inputValue, placeholder: props.placeholder, required: props.required, onChange: props.onChange, autoComplete: props.autoComplete });
+};
+
+exports.default = InputText;
+},{"react":"+UVH"}],"BJ5F":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Label = function Label(props) {
+  return _react2.default.createElement(
+    'label',
+    { htmlFor: props.labelName, className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Label;
 },{"react":"+UVH"}],"YK3C":[function(require,module,exports) {
 'use strict';
 
@@ -555,6 +657,36 @@ var Paragraph = function Paragraph(props) {
 };
 
 exports.default = Paragraph;
+},{"react":"+UVH"}],"i7oz":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var OrderedList = function OrderedList(props) {
+  var listItems = props.items.map(function (item) {
+    return _react2.default.createElement(
+      'li',
+      { key: item.toString(), className: props.cssClassChildren },
+      item
+    );
+  });
+
+  return _react2.default.createElement(
+    'ol',
+    { type: props.listType, className: props.cssClass },
+    listItems
+  );
+};
+
+exports.default = OrderedList;
 },{"react":"+UVH"}],"R5Af":[function(require,module,exports) {
 'use strict';
 
@@ -591,11 +723,19 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Paragraph = exports.Link = exports.Layout = exports.Image = exports.Heading = exports.Card = undefined;
+exports.UnorderedList = exports.Paragraph = exports.OrderedList = exports.Link = exports.Layout = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Heading = exports.Form = exports.Card = exports.Button = undefined;
+
+var _Button = require('./lib/components/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
 
 var _Card = require('./lib/components/Card');
 
 var _Card2 = _interopRequireDefault(_Card);
+
+var _Form = require('./lib/components/Form');
+
+var _Form2 = _interopRequireDefault(_Form);
 
 var _Heading = require('./lib/components/Heading');
 
@@ -604,6 +744,18 @@ var _Heading2 = _interopRequireDefault(_Heading);
 var _Image = require('./lib/components/Image');
 
 var _Image2 = _interopRequireDefault(_Image);
+
+var _InputSubmit = require('./lib/components/InputSubmit');
+
+var _InputSubmit2 = _interopRequireDefault(_InputSubmit);
+
+var _InputText = require('./lib/components/InputText');
+
+var _InputText2 = _interopRequireDefault(_InputText);
+
+var _Label = require('./lib/components/Label');
+
+var _Label2 = _interopRequireDefault(_Label);
 
 var _Layout = require('./lib/components/Layout');
 
@@ -617,18 +769,28 @@ var _Paragraph = require('./lib/components/Paragraph');
 
 var _Paragraph2 = _interopRequireDefault(_Paragraph);
 
+var _OrderedList = require('./lib/components/OrderedList');
+
+var _OrderedList2 = _interopRequireDefault(_OrderedList);
+
 var _UnorderedList = require('./lib/components/UnorderedList');
 
 var _UnorderedList2 = _interopRequireDefault(_UnorderedList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+exports.Button = _Button2.default;
 exports.Card = _Card2.default;
+exports.Form = _Form2.default;
 exports.Heading = _Heading2.default;
 exports.Image = _Image2.default;
+exports.InputSubmit = _InputSubmit2.default;
+exports.InputText = _InputText2.default;
+exports.Label = _Label2.default;
 exports.Layout = _Layout2.default;
 exports.Link = _Link2.default;
+exports.OrderedList = _OrderedList2.default;
 exports.Paragraph = _Paragraph2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Card":"Risu","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Paragraph":"T92y","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
+},{"./lib/components/Button":"NOSF","./lib/components/Card":"Risu","./lib/components/Form":"uv3A","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Paragraph":"T92y","./lib/components/OrderedList":"i7oz","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
