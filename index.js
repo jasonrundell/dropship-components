@@ -13,10 +13,12 @@ import OrderedList from './lib/components/OrderedList';
 import UnorderedList from './lib/components/UnorderedList';
 
 export {
+  Article,
   Button,
   Card,
   Form,
   Heading,
+  Hgroup,
   Image,
   InputSubmit,
   InputText,
@@ -25,5 +27,6 @@ export {
   Link,
   OrderedList,
   Paragraph,
+  Section,
   UnorderedList
 };

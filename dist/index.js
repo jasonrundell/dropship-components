@@ -723,7 +723,7 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Paragraph = exports.OrderedList = exports.Link = exports.Layout = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Heading = exports.Form = exports.Card = exports.Button = undefined;
+exports.UnorderedList = exports.Section = exports.Paragraph = exports.OrderedList = exports.Link = exports.Layout = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Form = exports.Card = exports.Button = exports.Article = undefined;
 
 var _Button = require('./lib/components/Button');
 
@@ -779,10 +779,12 @@ var _UnorderedList2 = _interopRequireDefault(_UnorderedList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+exports.Article = Article;
 exports.Button = _Button2.default;
 exports.Card = _Card2.default;
 exports.Form = _Form2.default;
 exports.Heading = _Heading2.default;
+exports.Hgroup = Hgroup;
 exports.Image = _Image2.default;
 exports.InputSubmit = _InputSubmit2.default;
 exports.InputText = _InputText2.default;
@@ -791,6 +793,7 @@ exports.Layout = _Layout2.default;
 exports.Link = _Link2.default;
 exports.OrderedList = _OrderedList2.default;
 exports.Paragraph = _Paragraph2.default;
+exports.Section = Section;
 exports.UnorderedList = _UnorderedList2.default;
 },{"./lib/components/Button":"NOSF","./lib/components/Card":"Risu","./lib/components/Form":"uv3A","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Paragraph":"T92y","./lib/components/OrderedList":"i7oz","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
