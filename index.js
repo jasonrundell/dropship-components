@@ -13,8 +13,9 @@ import InputText from './lib/components/InputText';
 import Label from './lib/components/Label';
 import Layout from './lib/components/Layout';
 import Link from './lib/components/Link';
-import Paragraph from './lib/components/Paragraph';
+import Nav from './lib/components/Nav';
 import OrderedList from './lib/components/OrderedList';
+import Paragraph from './lib/components/Paragraph';
 import Section from './lib/components/Section';
 import UnorderedList from './lib/components/UnorderedList';
 
@@ -34,6 +35,7 @@ export {
   Label,
   Layout,
   Link,
+  Nav,
   OrderedList,
   Paragraph,
   Section,
