@@ -4,6 +4,7 @@ import Article from './lib/components/Article';
 import Aside from './lib/components/Aside';
 import Button from './lib/components/Button';
 import Card from './lib/components/Card';
+import Code from './lib/components/Code';
 import Form from './lib/components/Form';
 import Footer from './lib/components/Footer';
 import Hgroup from './lib/components/Hgroup';
@@ -27,6 +28,7 @@ export {
   Aside,
   Button,
   Card,
+  Code,
   Form,
   Footer,
   Heading,
