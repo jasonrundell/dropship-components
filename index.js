@@ -1,8 +1,10 @@
 import Address from './lib/components/Address';
 import Article from './lib/components/Article';
+import Aside from './lib/components/Aside';
 import Button from './lib/components/Button';
 import Card from './lib/components/Card';
 import Form from './lib/components/Form';
+import Footer from './lib/components/Footer';
 import Hgroup from './lib/components/Hgroup';
 import Heading from './lib/components/Heading';
 import Image from './lib/components/Image';
@@ -19,9 +21,11 @@ import UnorderedList from './lib/components/UnorderedList';
 export {
   Address,
   Article,
+  Aside,
   Button,
   Card,
   Form,
+  Footer,
   Heading,
   Hgroup,
   Image,
