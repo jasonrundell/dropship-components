@@ -425,7 +425,29 @@ if ('production' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":"dDQ8"}],"bjUq":[function(require,module,exports) {
+},{"./cjs/react.production.min.js":"dDQ8"}],"3GLL":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Abbr = function Abbr(props) {
+  return _react2.default.createElement(
+    'abbr',
+    { className: props.cssClass, title: props.title },
+    props.children
+  );
+};
+
+exports.default = Abbr;
+},{"react":"+UVH"}],"bjUq":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -469,6 +491,28 @@ var Article = function Article(props) {
 };
 
 exports.default = Article;
+},{"react":"+UVH"}],"vri3":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Aside = function Aside(props) {
+  return _react2.default.createElement(
+    'aside',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Aside;
 },{"react":"+UVH"}],"NOSF":[function(require,module,exports) {
 'use strict';
 
@@ -535,6 +579,28 @@ var Form = function Form(props) {
 };
 
 exports.default = Form;
+},{"react":"+UVH"}],"b10I":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer(props) {
+  return _react2.default.createElement(
+    'footer',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Footer;
 },{"react":"+UVH"}],"6LAG":[function(require,module,exports) {
 'use strict';
 
@@ -701,7 +767,7 @@ var Link = function Link(props) {
 };
 
 exports.default = Link;
-},{"react":"+UVH"}],"T92y":[function(require,module,exports) {
+},{"react":"+UVH"}],"XBFZ":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -714,15 +780,15 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Paragraph = function Paragraph(props) {
+var Nav = function Nav(props) {
   return _react2.default.createElement(
-    'p',
+    'nav',
     { className: props.cssClass },
     props.children
   );
 };
 
-exports.default = Paragraph;
+exports.default = Nav;
 },{"react":"+UVH"}],"i7oz":[function(require,module,exports) {
 'use strict';
 
@@ -753,6 +819,28 @@ var OrderedList = function OrderedList(props) {
 };
 
 exports.default = OrderedList;
+},{"react":"+UVH"}],"T92y":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Paragraph = function Paragraph(props) {
+  return _react2.default.createElement(
+    'p',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Paragraph;
 },{"react":"+UVH"}],"GYtO":[function(require,module,exports) {
 'use strict';
 
@@ -811,7 +899,11 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Section = exports.Paragraph = exports.OrderedList = exports.Link = exports.Layout = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Form = exports.Card = exports.Button = exports.Article = exports.Address = undefined;
+exports.UnorderedList = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Layout = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Card = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
+
+var _Abbr = require('./lib/components/Abbr');
+
+var _Abbr2 = _interopRequireDefault(_Abbr);
 
 var _Address = require('./lib/components/Address');
 
@@ -820,6 +912,10 @@ var _Address2 = _interopRequireDefault(_Address);
 var _Article = require('./lib/components/Article');
 
 var _Article2 = _interopRequireDefault(_Article);
+
+var _Aside = require('./lib/components/Aside');
+
+var _Aside2 = _interopRequireDefault(_Aside);
 
 var _Button = require('./lib/components/Button');
 
@@ -832,6 +928,10 @@ var _Card2 = _interopRequireDefault(_Card);
 var _Form = require('./lib/components/Form');
 
 var _Form2 = _interopRequireDefault(_Form);
+
+var _Footer = require('./lib/components/Footer');
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 var _Hgroup = require('./lib/components/Hgroup');
 
@@ -865,13 +965,17 @@ var _Link = require('./lib/components/Link');
 
 var _Link2 = _interopRequireDefault(_Link);
 
-var _Paragraph = require('./lib/components/Paragraph');
+var _Nav = require('./lib/components/Nav');
 
-var _Paragraph2 = _interopRequireDefault(_Paragraph);
+var _Nav2 = _interopRequireDefault(_Nav);
 
 var _OrderedList = require('./lib/components/OrderedList');
 
 var _OrderedList2 = _interopRequireDefault(_OrderedList);
+
+var _Paragraph = require('./lib/components/Paragraph');
+
+var _Paragraph2 = _interopRequireDefault(_Paragraph);
 
 var _Section = require('./lib/components/Section');
 
@@ -883,11 +987,14 @@ var _UnorderedList2 = _interopRequireDefault(_UnorderedList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+exports.Abbr = _Abbr2.default;
 exports.Address = _Address2.default;
 exports.Article = _Article2.default;
+exports.Aside = _Aside2.default;
 exports.Button = _Button2.default;
 exports.Card = _Card2.default;
 exports.Form = _Form2.default;
+exports.Footer = _Footer2.default;
 exports.Heading = _Heading2.default;
 exports.Hgroup = _Hgroup2.default;
 exports.Image = _Image2.default;
@@ -896,9 +1003,10 @@ exports.InputText = _InputText2.default;
 exports.Label = _Label2.default;
 exports.Layout = _Layout2.default;
 exports.Link = _Link2.default;
+exports.Nav = _Nav2.default;
 exports.OrderedList = _OrderedList2.default;
 exports.Paragraph = _Paragraph2.default;
 exports.Section = _Section2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Button":"NOSF","./lib/components/Card":"Risu","./lib/components/Form":"uv3A","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Paragraph":"T92y","./lib/components/OrderedList":"i7oz","./lib/components/Section":"GYtO","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Card":"Risu","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Layout":"YK3C","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map

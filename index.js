@@ -1,3 +1,4 @@
+import Abbr from './lib/components/Abbr';
 import Address from './lib/components/Address';
 import Article from './lib/components/Article';
 import Aside from './lib/components/Aside';
@@ -20,6 +21,7 @@ import Section from './lib/components/Section';
 import UnorderedList from './lib/components/UnorderedList';
 
 export {
+  Abbr,
   Address,
   Article,
   Aside,
