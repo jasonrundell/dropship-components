@@ -13,7 +13,6 @@ import Image from './lib/components/Image';
 import InputSubmit from './lib/components/InputSubmit';
 import InputText from './lib/components/InputText';
 import Label from './lib/components/Label';
-import Layout from './lib/components/Layout';
 import Link from './lib/components/Link';
 import Nav from './lib/components/Nav';
 import OrderedList from './lib/components/OrderedList';
@@ -37,7 +36,6 @@ export {
   InputSubmit,
   InputText,
   Label,
-  Layout,
   Link,
   Nav,
   OrderedList,
