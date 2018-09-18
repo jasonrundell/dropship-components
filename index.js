@@ -19,6 +19,7 @@ import OrderedList from './lib/components/OrderedList';
 import Paragraph from './lib/components/Paragraph';
 import Section from './lib/components/Section';
 import Small from './lib/components/Small';
+import Strong from './lib/components/Strong';
 import UnorderedList from './lib/components/UnorderedList';
 
 export {
@@ -43,5 +44,6 @@ export {
   Paragraph,
   Section,
   Small,
+  Strong,
   UnorderedList
 };

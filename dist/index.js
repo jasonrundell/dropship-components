@@ -885,6 +885,28 @@ var Small = function Small(props) {
 };
 
 exports.default = Small;
+},{"react":"+UVH"}],"uc5E":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Strong = function Strong(props) {
+  return _react2.default.createElement(
+    'strong',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Strong;
 },{"react":"+UVH"}],"R5Af":[function(require,module,exports) {
 'use strict';
 
@@ -922,7 +944,7 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
+exports.UnorderedList = exports.Strong = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
 
 var _Abbr = require('./lib/components/Abbr');
 
@@ -1008,6 +1030,10 @@ var _Small = require('./lib/components/Small');
 
 var _Small2 = _interopRequireDefault(_Small);
 
+var _Strong = require('./lib/components/Strong');
+
+var _Strong2 = _interopRequireDefault(_Strong);
+
 var _UnorderedList = require('./lib/components/UnorderedList');
 
 var _UnorderedList2 = _interopRequireDefault(_UnorderedList);
@@ -1035,6 +1061,7 @@ exports.OrderedList = _OrderedList2.default;
 exports.Paragraph = _Paragraph2.default;
 exports.Section = _Section2.default;
 exports.Small = _Small2.default;
+exports.Strong = _Strong2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/Strong":"uc5E","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
