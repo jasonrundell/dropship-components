@@ -18,6 +18,7 @@ import Nav from './lib/components/Nav';
 import OrderedList from './lib/components/OrderedList';
 import Paragraph from './lib/components/Paragraph';
 import Section from './lib/components/Section';
+import Small from './lib/components/Small';
 import UnorderedList from './lib/components/UnorderedList';
 
 export {
@@ -41,5 +42,6 @@ export {
   OrderedList,
   Paragraph,
   Section,
+  Small,
   UnorderedList
 };
