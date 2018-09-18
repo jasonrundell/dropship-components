@@ -5,6 +5,7 @@ import Aside from './lib/components/Aside';
 import Button from './lib/components/Button';
 import Code from './lib/components/Code';
 import Div from './lib/components/Div';
+import Em from './lib/components/Em';
 import Form from './lib/components/Form';
 import Footer from './lib/components/Footer';
 import Hgroup from './lib/components/Hgroup';
@@ -31,6 +32,7 @@ export {
   Button,
   Code,
   Div,
+  Em,
   Form,
   Footer,
   Heading,

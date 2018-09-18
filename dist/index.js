@@ -579,6 +579,28 @@ var Div = function Div(props) {
 };
 
 exports.default = Div;
+},{"react":"+UVH"}],"FOJ+":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Em = function Em(props) {
+  return _react2.default.createElement(
+    'em',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Em;
 },{"react":"+UVH"}],"uv3A":[function(require,module,exports) {
 'use strict';
 
@@ -885,6 +907,28 @@ var Small = function Small(props) {
 };
 
 exports.default = Small;
+},{"react":"+UVH"}],"fJVq":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Span = function Span(props) {
+  return _react2.default.createElement(
+    'span',
+    { className: props.cssClass },
+    props.children
+  );
+};
+
+exports.default = Span;
 },{"react":"+UVH"}],"uc5E":[function(require,module,exports) {
 'use strict';
 
@@ -944,7 +988,7 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Strong = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
+exports.UnorderedList = exports.Strong = exports.Span = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Em = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
 
 var _Abbr = require('./lib/components/Abbr');
 
@@ -973,6 +1017,10 @@ var _Code2 = _interopRequireDefault(_Code);
 var _Div = require('./lib/components/Div');
 
 var _Div2 = _interopRequireDefault(_Div);
+
+var _Em = require('./lib/components/Em');
+
+var _Em2 = _interopRequireDefault(_Em);
 
 var _Form = require('./lib/components/Form');
 
@@ -1030,6 +1078,10 @@ var _Small = require('./lib/components/Small');
 
 var _Small2 = _interopRequireDefault(_Small);
 
+var _Span = require('./lib/components/Span');
+
+var _Span2 = _interopRequireDefault(_Span);
+
 var _Strong = require('./lib/components/Strong');
 
 var _Strong2 = _interopRequireDefault(_Strong);
@@ -1047,6 +1099,7 @@ exports.Aside = _Aside2.default;
 exports.Button = _Button2.default;
 exports.Code = _Code2.default;
 exports.Div = _Div2.default;
+exports.Em = _Em2.default;
 exports.Form = _Form2.default;
 exports.Footer = _Footer2.default;
 exports.Heading = _Heading2.default;
@@ -1061,7 +1114,8 @@ exports.OrderedList = _OrderedList2.default;
 exports.Paragraph = _Paragraph2.default;
 exports.Section = _Section2.default;
 exports.Small = _Small2.default;
+exports.Span = _Span2.default;
 exports.Strong = _Strong2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/Strong":"uc5E","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Em":"FOJ+","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/Span":"fJVq","./lib/components/Strong":"uc5E","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
