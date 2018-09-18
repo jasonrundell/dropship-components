@@ -570,7 +570,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Card = function Card(props) {
+var Div = function Div(props) {
   return _react2.default.createElement(
     'div',
     { className: props.cssClass },
@@ -578,7 +578,7 @@ var Card = function Card(props) {
   );
 };
 
-exports.default = Card;
+exports.default = Div;
 },{"react":"+UVH"}],"uv3A":[function(require,module,exports) {
 'use strict';
 
