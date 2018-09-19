@@ -1,13 +1,14 @@
 import Abbr from './lib/components/Abbr';
 import Address from './lib/components/Address';
+import Anchor from './lib/components/Anchor';
 import Article from './lib/components/Article';
 import Aside from './lib/components/Aside';
 import Button from './lib/components/Button';
 import Code from './lib/components/Code';
 import Div from './lib/components/Div';
 import Em from './lib/components/Em';
-import Form from './lib/components/Form';
 import Footer from './lib/components/Footer';
+import Form from './lib/components/Form';
 import Hgroup from './lib/components/Hgroup';
 import Heading from './lib/components/Heading';
 import Image from './lib/components/Image';
@@ -27,14 +28,15 @@ import UnorderedList from './lib/components/UnorderedList';
 export {
   Abbr,
   Address,
+  Anchor,
   Article,
   Aside,
   Button,
   Code,
   Div,
   Em,
-  Form,
   Footer,
+  Form,
   Heading,
   Hgroup,
   Image,

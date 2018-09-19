@@ -444,8 +444,7 @@ var Abbr = function Abbr(props) {
     { className: props.cssClass, title: props.title },
     props.children
   );
-};
-
+}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
 exports.default = Abbr;
 },{"react":"+UVH"}],"bjUq":[function(require,module,exports) {
 'use strict';
@@ -466,9 +465,29 @@ var Address = function Address(props) {
     { className: props.cssClass },
     props.children
   );
-};
-
+}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
 exports.default = Address;
+},{"react":"+UVH"}],"C/Xo":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Anchor = function Anchor(props) {
+  return _react2.default.createElement(
+    'a',
+    { href: props.href, className: props.cssClass, onClick: props.onClick, target: props.target },
+    props.children
+  );
+}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+exports.default = Anchor;
 },{"react":"+UVH"}],"RzQD":[function(require,module,exports) {
 'use strict';
 
@@ -598,31 +617,8 @@ var Em = function Em(props) {
     { className: props.cssClass },
     props.children
   );
-};
-
+}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
 exports.default = Em;
-},{"react":"+UVH"}],"uv3A":[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Form = function Form(props) {
-  return _react2.default.createElement(
-    'form',
-    { className: props.cssClass, onSubmit: props.onSubmit },
-    props.children
-  );
-};
-
-exports.default = Form;
 },{"react":"+UVH"}],"b10I":[function(require,module,exports) {
 'use strict';
 
@@ -645,6 +641,28 @@ var Footer = function Footer(props) {
 };
 
 exports.default = Footer;
+},{"react":"+UVH"}],"uv3A":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Form = function Form(props) {
+  return _react2.default.createElement(
+    'form',
+    { className: props.cssClass, onSubmit: props.onSubmit },
+    props.children
+  );
+};
+
+exports.default = Form;
 },{"react":"+UVH"}],"6LAG":[function(require,module,exports) {
 'use strict';
 
@@ -780,13 +798,22 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
+
+
 var Link = function Link(props) {
-  return _react2.default.createElement(
-    'a',
-    { href: props.href, className: props.cssClass, onClick: props.onClick, target: props.target },
-    props.children
-  );
-}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+  var _React$createElement;
+
+  return _react2.default.createElement('link', (_React$createElement = {
+    href: props.href,
+    rel: props.rel,
+    media: props.media,
+    as: props.as,
+    type: props.type,
+    crossOrigin: props.crossorigin
+  }, _defineProperty(_React$createElement, 'media', props.media), _defineProperty(_React$createElement, 'importance', props.importance), _defineProperty(_React$createElement, 'integrity', props.integrity), _defineProperty(_React$createElement, 'referrerPolicy', props.referrerpolicy), _defineProperty(_React$createElement, 'sizes', props.sizes), _defineProperty(_React$createElement, 'title', props.title), _React$createElement));
+};
+
 exports.default = Link;
 },{"react":"+UVH"}],"XBFZ":[function(require,module,exports) {
 'use strict';
@@ -987,7 +1014,7 @@ exports.default = UnorderedList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.UnorderedList = exports.Strong = exports.Span = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Footer = exports.Form = exports.Em = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Address = exports.Abbr = undefined;
+exports.UnorderedList = exports.Strong = exports.Span = exports.Small = exports.Section = exports.Paragraph = exports.OrderedList = exports.Nav = exports.Link = exports.Label = exports.InputText = exports.InputSubmit = exports.Image = exports.Hgroup = exports.Heading = exports.Form = exports.Footer = exports.Em = exports.Div = exports.Code = exports.Button = exports.Aside = exports.Article = exports.Anchor = exports.Address = exports.Abbr = undefined;
 
 var _Abbr = require('./lib/components/Abbr');
 
@@ -996,6 +1023,10 @@ var _Abbr2 = _interopRequireDefault(_Abbr);
 var _Address = require('./lib/components/Address');
 
 var _Address2 = _interopRequireDefault(_Address);
+
+var _Anchor = require('./lib/components/Anchor');
+
+var _Anchor2 = _interopRequireDefault(_Anchor);
 
 var _Article = require('./lib/components/Article');
 
@@ -1021,13 +1052,13 @@ var _Em = require('./lib/components/Em');
 
 var _Em2 = _interopRequireDefault(_Em);
 
-var _Form = require('./lib/components/Form');
-
-var _Form2 = _interopRequireDefault(_Form);
-
 var _Footer = require('./lib/components/Footer');
 
 var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Form = require('./lib/components/Form');
+
+var _Form2 = _interopRequireDefault(_Form);
 
 var _Hgroup = require('./lib/components/Hgroup');
 
@@ -1093,14 +1124,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.Abbr = _Abbr2.default;
 exports.Address = _Address2.default;
+exports.Anchor = _Anchor2.default;
 exports.Article = _Article2.default;
 exports.Aside = _Aside2.default;
 exports.Button = _Button2.default;
 exports.Code = _Code2.default;
 exports.Div = _Div2.default;
 exports.Em = _Em2.default;
-exports.Form = _Form2.default;
 exports.Footer = _Footer2.default;
+exports.Form = _Form2.default;
 exports.Heading = _Heading2.default;
 exports.Hgroup = _Hgroup2.default;
 exports.Image = _Image2.default;
@@ -1116,5 +1148,5 @@ exports.Small = _Small2.default;
 exports.Span = _Span2.default;
 exports.Strong = _Strong2.default;
 exports.UnorderedList = _UnorderedList2.default;
-},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Em":"FOJ+","./lib/components/Form":"uv3A","./lib/components/Footer":"b10I","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/Span":"fJVq","./lib/components/Strong":"uc5E","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"3GLL","./lib/components/Address":"bjUq","./lib/components/Anchor":"C/Xo","./lib/components/Article":"RzQD","./lib/components/Aside":"vri3","./lib/components/Button":"NOSF","./lib/components/Code":"KO+H","./lib/components/Div":"jawT","./lib/components/Em":"FOJ+","./lib/components/Footer":"b10I","./lib/components/Form":"uv3A","./lib/components/Hgroup":"6LAG","./lib/components/Heading":"jYxe","./lib/components/Image":"0YAT","./lib/components/InputSubmit":"rTML","./lib/components/InputText":"vNob","./lib/components/Label":"BJ5F","./lib/components/Link":"/f3b","./lib/components/Nav":"XBFZ","./lib/components/OrderedList":"i7oz","./lib/components/Paragraph":"T92y","./lib/components/Section":"GYtO","./lib/components/Small":"GPWb","./lib/components/Span":"fJVq","./lib/components/Strong":"uc5E","./lib/components/UnorderedList":"R5Af"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
