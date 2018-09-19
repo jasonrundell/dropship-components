@@ -783,11 +783,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Link = function Link(props) {
   return _react2.default.createElement(
     'a',
-    { href: props.href, className: props.cssClass, onClick: props.onClick },
+    { href: props.href, className: props.cssClass, onClick: props.onClick, target: props.target },
     props.children
   );
-};
-
+}; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 exports.default = Link;
 },{"react":"+UVH"}],"XBFZ":[function(require,module,exports) {
 'use strict';
