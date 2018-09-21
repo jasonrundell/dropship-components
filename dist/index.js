@@ -441,7 +441,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Abbr = function Abbr(props) {
   return _react2.default.createElement(
     'abbr',
-    { className: props.cssClass, title: props.title },
+    { className: props.className, title: props.title },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
@@ -462,7 +462,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Address = function Address(props) {
   return _react2.default.createElement(
     'address',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
@@ -483,7 +483,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Anchor = function Anchor(props) {
   return _react2.default.createElement(
     'a',
-    { href: props.href, className: props.cssClass, onClick: props.onClick, target: props.target },
+    { href: props.href, className: props.className, onClick: props.onClick, target: props.target },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
@@ -504,7 +504,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Article = function Article(props) {
   return _react2.default.createElement(
     'article',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -526,7 +526,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Aside = function Aside(props) {
   return _react2.default.createElement(
     'aside',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
@@ -547,7 +547,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Blockquote = function Blockquote(props) {
   return _react2.default.createElement(
     'blockquote',
-    { className: props.cssClass, cite: props.cite },
+    { className: props.className, cite: props.cite },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
@@ -568,7 +568,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Button = function Button(props) {
   return _react2.default.createElement(
     'button',
-    { className: props.cssClass, onClick: props.onClick },
+    { className: props.className, onClick: props.onClick },
     props.children
   );
 };
@@ -590,7 +590,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Caption = function Caption(props) {
   return _react2.default.createElement(
     'caption',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
@@ -611,7 +611,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Code = function Code(props) {
   return _react2.default.createElement(
     'code',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -633,7 +633,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Div = function Div(props) {
   return _react2.default.createElement(
     'div',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -655,7 +655,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Em = function Em(props) {
   return _react2.default.createElement(
     'em',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
@@ -676,13 +676,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Fieldset = function Fieldset(props) {
   return _react2.default.createElement(
     'fieldset',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
 
 //let disabled = props.isReadonly ? {'disabled' : 'disabled'} : {};
-//<fieldset className={props.cssClass} {...disabled}>{props.children}</fieldset>;
+//<fieldset {... props} {...disabled}>{props.children}</fieldset>;
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset
 exports.default = Fieldset;
@@ -702,7 +702,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Figure = function Figure(props) {
   return _react2.default.createElement(
     'figure',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
@@ -723,7 +723,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer(props) {
   return _react2.default.createElement(
     'footer',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -745,7 +745,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react2.default.createElement(
     'form',
-    { className: props.cssClass, onSubmit: props.onSubmit },
+    { className: props.className, onSubmit: props.onSubmit },
     props.children
   );
 };
@@ -767,7 +767,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Header = function Header(props) {
   return _react2.default.createElement(
     'header',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
@@ -790,7 +790,7 @@ var Heading = function Heading(props) {
 
   return _react2.default.createElement(
     Component,
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -812,7 +812,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hgroup = function Hgroup(props) {
   return _react2.default.createElement(
     'hgroup',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -832,7 +832,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Hr = function Hr(props) {
-  return _react2.default.createElement('hr', { className: props.cssClass });
+  return _react2.default.createElement('hr', { className: props.className });
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
 exports.default = Hr;
 },{"react":"+UVH"}],"0YAT":[function(require,module,exports) {
@@ -849,7 +849,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Image = function Image(props) {
-  return _react2.default.createElement("img", { src: props.src, className: props.cssClass, alt: props.alt || "" });
+  return _react2.default.createElement("img", { src: props.src, className: props.className, alt: props.alt || "" });
 };
 
 exports.default = Image;
@@ -867,7 +867,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var InputSubmit = function InputSubmit(props) {
-  return _react2.default.createElement('input', { type: 'submit', className: props.cssClass, name: props.inputName, value: props.inputValue });
+  return _react2.default.createElement('input', { type: 'submit', className: props.className, name: props.inputName, value: props.inputValue });
 };
 
 exports.default = InputSubmit;
@@ -885,7 +885,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var InputText = function InputText(props) {
-  return _react2.default.createElement("input", { type: "text", className: props.cssClass, name: props.inputName, value: props.inputValue, placeholder: props.placeholder, required: props.required, onChange: props.onChange, autoComplete: props.autoComplete });
+  return _react2.default.createElement("input", { type: "text", className: props.className, name: props.inputName, value: props.inputValue, placeholder: props.placeholder, required: props.required, onChange: props.onChange, autoComplete: props.autoComplete });
 };
 
 exports.default = InputText;
@@ -905,7 +905,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Label = function Label(props) {
   return _react2.default.createElement(
     'label',
-    { htmlFor: props.labelName, className: props.cssClass },
+    { htmlFor: props.labelName, className: props.className },
     props.children
   );
 };
@@ -927,7 +927,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Legend = function Legend(props) {
   return _react2.default.createElement(
     'legend',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend
@@ -978,7 +978,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Nav = function Nav(props) {
   return _react2.default.createElement(
     'nav',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1001,14 +1001,14 @@ var OrderedList = function OrderedList(props) {
   var listItems = props.items.map(function (item) {
     return _react2.default.createElement(
       'li',
-      { key: item.toString(), className: props.cssClassChildren },
+      { key: item.toString(), className: props.classNameChildren },
       item
     );
   });
 
   return _react2.default.createElement(
     'ol',
-    { type: props.listType, className: props.cssClass },
+    { type: props.listType, className: props.className },
     listItems
   );
 };
@@ -1030,7 +1030,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Paragraph = function Paragraph(props) {
   return _react2.default.createElement(
     'p',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1052,7 +1052,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Pre = function Pre(props) {
   return _react2.default.createElement(
     'pre',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
@@ -1073,7 +1073,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Section = function Section(props) {
   return _react2.default.createElement(
     'section',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1095,7 +1095,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Small = function Small(props) {
   return _react2.default.createElement(
     'small',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1117,7 +1117,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Span = function Span(props) {
   return _react2.default.createElement(
     'span',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1139,7 +1139,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Strong = function Strong(props) {
   return _react2.default.createElement(
     'strong',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 };
@@ -1161,7 +1161,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Sub = function Sub(props) {
   return _react2.default.createElement(
     'sub',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
@@ -1182,7 +1182,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Summary = function Summary(props) {
   return _react2.default.createElement(
     'summary',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
@@ -1203,7 +1203,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Sup = function Sup(props) {
   return _react2.default.createElement(
     'sup',
-    { className: props.cssClass },
+    { className: props.className },
     props.children
   );
 }; // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
@@ -1226,14 +1226,14 @@ var UnorderedList = function UnorderedList(props) {
   var listItems = items.map(function (item) {
     return _react2.default.createElement(
       'li',
-      { key: item.toString(), className: props.cssClassChildren },
+      { key: item.toString(), className: props.classNameChildren },
       item
     );
   });
 
   return _react2.default.createElement(
     'ul',
-    { className: props.cssClass },
+    { className: props.className },
     listItems
   );
 };
