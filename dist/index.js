@@ -756,12 +756,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 var Col = function Col(props) {
-  return _react.default.createElement("col", props, props.children);
+  return _react.default.createElement("col", props);
 };
 
 var _default = Col;
 exports.default = _default;
-},{"react":"HdMw"}],"tzUJ":[function(require,module,exports) {
+},{"react":"HdMw"}],"qr8s":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -771,16 +771,26 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Col = _interopRequireDefault(require("./Col"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
-var Colgroup = function Colgroup(props) {
-  return _react.default.createElement("colgroup", props, props.children);
+var ColGroup = function ColGroup(props) {
+  var listItems = props.items.map(function (item) {
+    return _react.default.createElement(_Col.default, {
+      key: item.toString(),
+      className: props.classNameChildren
+    });
+  });
+  return _react.default.createElement("colgroup", {
+    className: props.className
+  }, listItems);
 };
 
-var _default = Colgroup;
+var _default = ColGroup;
 exports.default = _default;
-},{"react":"HdMw"}],"5TXu":[function(require,module,exports) {
+},{"react":"HdMw","./Col":"xT1N"}],"5TXu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1513,10 +1523,10 @@ Object.defineProperty(exports, "Col", {
     return _Col.default;
   }
 });
-Object.defineProperty(exports, "Colgroup", {
+Object.defineProperty(exports, "ColGroup", {
   enumerable: true,
   get: function () {
-    return _Colgroup.default;
+    return _ColGroup.default;
   }
 });
 Object.defineProperty(exports, "Div", {
@@ -1732,7 +1742,7 @@ var _Code = _interopRequireDefault(require("./lib/components/Code"));
 
 var _Col = _interopRequireDefault(require("./lib/components/Col"));
 
-var _Colgroup = _interopRequireDefault(require("./lib/components/Colgroup"));
+var _ColGroup = _interopRequireDefault(require("./lib/components/ColGroup"));
 
 var _Div = _interopRequireDefault(require("./lib/components/Div"));
 
@@ -1799,5 +1809,5 @@ var _Sup = _interopRequireDefault(require("./lib/components/Sup"));
 var _UnorderedList = _interopRequireDefault(require("./lib/components/UnorderedList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/Colgroup":"tzUJ","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Li":"inVn","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OptGroup":"WGEq","./lib/components/Option":"JlT8","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/ColGroup":"qr8s","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Li":"inVn","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OptGroup":"WGEq","./lib/components/Option":"JlT8","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
