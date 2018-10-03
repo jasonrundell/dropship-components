@@ -8,7 +8,7 @@ import Button from './lib/components/Button';
 import Caption from './lib/components/Caption';
 import Code from './lib/components/Code';
 import Col from './lib/components/Col';
-import Colgroup from './lib/components/Colgroup';
+import ColGroup from './lib/components/ColGroup';
 import Div from './lib/components/Div';
 import Em from './lib/components/Em';
 import Fieldset from './lib/components/Fieldset';
@@ -53,7 +53,7 @@ export {
   Caption,
   Code,
   Col,
-  Colgroup,
+  ColGroup,
   Div,
   Em,
   Fieldset,
