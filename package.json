@@ -18,12 +18,13 @@
     "setupTestFrameworkScriptFile": "./setupTests.js"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "jest": "^23.6.0",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "^1.10.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "uuid": "^3.3.2"
