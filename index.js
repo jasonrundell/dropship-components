@@ -7,6 +7,7 @@ import Blockquote from './lib/components/Blockquote';
 import Button from './lib/components/Button';
 import Caption from './lib/components/Caption';
 import Code from './lib/components/Code';
+import Colgroup from './lib/components/Colgroup';
 import Div from './lib/components/Div';
 import Em from './lib/components/Em';
 import Fieldset from './lib/components/Fieldset';
@@ -46,6 +47,7 @@ export {
   Button,
   Caption,
   Code,
+  Colgroup,
   Div,
   Em,
   Fieldset,
