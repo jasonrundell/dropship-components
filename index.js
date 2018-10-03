@@ -24,6 +24,7 @@ import InputSubmit from './lib/components/InputSubmit';
 import InputText from './lib/components/InputText';
 import Label from './lib/components/Label';
 import Legend from './lib/components/Legend';
+import Li from './lib/components/Li';
 import Link from './lib/components/Link';
 import Main from './lib/components/Main';
 import Nav from './lib/components/Nav';
@@ -68,6 +69,7 @@ export {
   InputText,
   Label,
   Legend,
+  Li,
   Link,
   Main,
   Nav,
