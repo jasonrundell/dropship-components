@@ -27,6 +27,8 @@ import Legend from './lib/components/Legend';
 import Link from './lib/components/Link';
 import Main from './lib/components/Main';
 import Nav from './lib/components/Nav';
+import OptGroup from './lib/components/OptGroup';
+import Option from './lib/components/Option';
 import OrderedList from './lib/components/OrderedList';
 import Paragraph from './lib/components/Paragraph';
 import Pre from './lib/components/Pre';
@@ -69,6 +71,8 @@ export {
   Link,
   Main,
   Nav,
+  OptGroup,
+  Option,
   OrderedList,
   Paragraph,
   Pre,

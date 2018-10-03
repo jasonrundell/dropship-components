@@ -1154,7 +1154,7 @@ var Nav = function Nav(props) {
 
 var _default = Nav;
 exports.default = _default;
-},{"react":"HdMw"}],"o9nT":[function(require,module,exports) {
+},{"react":"HdMw"}],"JlT8":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1166,9 +1166,79 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option
+var Option = function Option(props) {
+  return _react.default.createElement("option", props, props.children);
+};
+
+var _default = Option;
+exports.default = _default;
+},{"react":"HdMw"}],"WGEq":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Option = _interopRequireDefault(require("./Option"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup
+var OptGroup = function OptGroup(props) {
+  var listItems = props.items.map(function (item) {
+    return _react.default.createElement(_Option.default, {
+      key: item.toString(),
+      className: props.classNameChildren
+    }, item);
+  });
+  return _react.default.createElement("optgroup", {
+    className: props.className
+  }, listItems);
+};
+
+var _default = OptGroup;
+exports.default = _default;
+},{"react":"HdMw","./Option":"JlT8"}],"inVn":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+var Li = function Li(props) {
+  return _react.default.createElement("li", props, props.children);
+};
+
+var _default = Li;
+exports.default = _default;
+},{"react":"HdMw"}],"o9nT":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Li = _interopRequireDefault(require("./Li"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
 var OrderedList = function OrderedList(props) {
   var listItems = props.items.map(function (item) {
-    return _react.default.createElement("li", {
+    return _react.default.createElement(_Li.default, {
       key: item.toString(),
       className: props.classNameChildren
     }, item);
@@ -1181,7 +1251,7 @@ var OrderedList = function OrderedList(props) {
 
 var _default = OrderedList;
 exports.default = _default;
-},{"react":"HdMw"}],"RCti":[function(require,module,exports) {
+},{"react":"HdMw","./Li":"inVn"}],"RCti":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1357,12 +1427,15 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Li = _interopRequireDefault(require("./Li"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
 var UnorderedList = function UnorderedList(props) {
   var items = props.items;
   var listItems = items.map(function (item) {
-    return _react.default.createElement("li", {
+    return _react.default.createElement(_Li.default, {
       key: item.toString(),
       className: props.classNameChildren
     }, item);
@@ -1374,7 +1447,7 @@ var UnorderedList = function UnorderedList(props) {
 
 var _default = UnorderedList;
 exports.default = _default;
-},{"react":"HdMw"}],"Focm":[function(require,module,exports) {
+},{"react":"HdMw","./Li":"inVn"}],"Focm":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1554,6 +1627,18 @@ Object.defineProperty(exports, "Nav", {
     return _Nav.default;
   }
 });
+Object.defineProperty(exports, "OptGroup", {
+  enumerable: true,
+  get: function () {
+    return _OptGroup.default;
+  }
+});
+Object.defineProperty(exports, "Option", {
+  enumerable: true,
+  get: function () {
+    return _Option.default;
+  }
+});
 Object.defineProperty(exports, "OrderedList", {
   enumerable: true,
   get: function () {
@@ -1679,6 +1764,10 @@ var _Main = _interopRequireDefault(require("./lib/components/Main"));
 
 var _Nav = _interopRequireDefault(require("./lib/components/Nav"));
 
+var _OptGroup = _interopRequireDefault(require("./lib/components/OptGroup"));
+
+var _Option = _interopRequireDefault(require("./lib/components/Option"));
+
 var _OrderedList = _interopRequireDefault(require("./lib/components/OrderedList"));
 
 var _Paragraph = _interopRequireDefault(require("./lib/components/Paragraph"));
@@ -1702,5 +1791,5 @@ var _Sup = _interopRequireDefault(require("./lib/components/Sup"));
 var _UnorderedList = _interopRequireDefault(require("./lib/components/UnorderedList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/Colgroup":"tzUJ","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/Colgroup":"tzUJ","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OptGroup":"WGEq","./lib/components/Option":"JlT8","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
