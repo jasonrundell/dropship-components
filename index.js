@@ -25,6 +25,7 @@ import InputText from './lib/components/InputText';
 import Label from './lib/components/Label';
 import Legend from './lib/components/Legend';
 import Link from './lib/components/Link';
+import Main from './lib/components/Main';
 import Nav from './lib/components/Nav';
 import OrderedList from './lib/components/OrderedList';
 import Paragraph from './lib/components/Paragraph';
@@ -66,6 +67,7 @@ export {
   Label,
   Legend,
   Link,
+  Main,
   Nav,
   OrderedList,
   Paragraph,

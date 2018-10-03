@@ -1117,6 +1117,25 @@ var Link = function Link(props) {
 
 var _default = Link;
 exports.default = _default;
+},{"react":"HdMw"}],"Nafn":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main
+var Main = function Main(props) {
+  return _react.default.createElement("main", props, props.children);
+};
+
+var _default = Main;
+exports.default = _default;
 },{"react":"HdMw"}],"lceu":[function(require,module,exports) {
 "use strict";
 
@@ -1523,6 +1542,12 @@ Object.defineProperty(exports, "Link", {
     return _Link.default;
   }
 });
+Object.defineProperty(exports, "Main", {
+  enumerable: true,
+  get: function () {
+    return _Main.default;
+  }
+});
 Object.defineProperty(exports, "Nav", {
   enumerable: true,
   get: function () {
@@ -1650,6 +1675,8 @@ var _Legend = _interopRequireDefault(require("./lib/components/Legend"));
 
 var _Link = _interopRequireDefault(require("./lib/components/Link"));
 
+var _Main = _interopRequireDefault(require("./lib/components/Main"));
+
 var _Nav = _interopRequireDefault(require("./lib/components/Nav"));
 
 var _OrderedList = _interopRequireDefault(require("./lib/components/OrderedList"));
@@ -1675,5 +1702,5 @@ var _Sup = _interopRequireDefault(require("./lib/components/Sup"));
 var _UnorderedList = _interopRequireDefault(require("./lib/components/UnorderedList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/Colgroup":"tzUJ","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Link":"EgMa","./lib/components/Nav":"lceu","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/Colgroup":"tzUJ","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map
