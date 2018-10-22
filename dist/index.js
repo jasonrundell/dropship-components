@@ -790,7 +790,26 @@ var ColGroup = function ColGroup(props) {
 
 var _default = ColGroup;
 exports.default = _default;
-},{"react":"HdMw","./Col":"xT1N"}],"5TXu":[function(require,module,exports) {
+},{"react":"HdMw","./Col":"xT1N"}],"B90G":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd
+var Dd = function Dd(props) {
+  return _react.default.createElement("dd", props, props.children);
+};
+
+var _default = Dd;
+exports.default = _default;
+},{"react":"HdMw"}],"5TXu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -808,7 +827,64 @@ var Div = function Div(props) {
 
 var _default = Div;
 exports.default = _default;
-},{"react":"HdMw"}],"3GlH":[function(require,module,exports) {
+},{"react":"HdMw"}],"c9cn":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt
+var Dt = function Dt(props) {
+  return _react.default.createElement("dt", props, props.children);
+};
+
+var _default = Dt;
+exports.default = _default;
+},{"react":"HdMw"}],"9MEC":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Div = _interopRequireDefault(require("./Div"));
+
+var _Dt = _interopRequireDefault(require("./Dt"));
+
+var _Dd = _interopRequireDefault(require("./Dd"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+var DescriptionList = function DescriptionList(props) {
+  var items = props.items;
+  var listItems = items.map(function (item) {
+    return _react.default.createElement(_Div.default, {
+      key: item.toString(),
+      className: props.classNameChildren
+    }, _react.default.createElement(_Dt.default, {
+      className: props.classNameDtChildren
+    }, item[0]), _react.default.createElement(_Dd.default, {
+      className: props.classNameDdChildren
+    }, item[1]));
+  });
+  return _react.default.createElement("dl", {
+    className: props.className
+  }, listItems);
+};
+
+var _default = DescriptionList;
+exports.default = _default;
+},{"react":"HdMw","./Div":"5TXu","./Dt":"c9cn","./Dd":"B90G"}],"3GlH":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1529,10 +1605,28 @@ Object.defineProperty(exports, "ColGroup", {
     return _ColGroup.default;
   }
 });
+Object.defineProperty(exports, "Dd", {
+  enumerable: true,
+  get: function () {
+    return _Dd.default;
+  }
+});
+Object.defineProperty(exports, "DescriptionList", {
+  enumerable: true,
+  get: function () {
+    return _DescriptionList.default;
+  }
+});
 Object.defineProperty(exports, "Div", {
   enumerable: true,
   get: function () {
     return _Div.default;
+  }
+});
+Object.defineProperty(exports, "Dt", {
+  enumerable: true,
+  get: function () {
+    return _Dt.default;
   }
 });
 Object.defineProperty(exports, "Em", {
@@ -1744,7 +1838,13 @@ var _Col = _interopRequireDefault(require("./lib/components/Col"));
 
 var _ColGroup = _interopRequireDefault(require("./lib/components/ColGroup"));
 
+var _Dd = _interopRequireDefault(require("./lib/components/Dd"));
+
+var _DescriptionList = _interopRequireDefault(require("./lib/components/DescriptionList"));
+
 var _Div = _interopRequireDefault(require("./lib/components/Div"));
+
+var _Dt = _interopRequireDefault(require("./lib/components/Dt"));
 
 var _Em = _interopRequireDefault(require("./lib/components/Em"));
 
@@ -1809,5 +1909,5 @@ var _Sup = _interopRequireDefault(require("./lib/components/Sup"));
 var _UnorderedList = _interopRequireDefault(require("./lib/components/UnorderedList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/ColGroup":"qr8s","./lib/components/Div":"5TXu","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Li":"inVn","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OptGroup":"WGEq","./lib/components/Option":"JlT8","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
+},{"./lib/components/Abbr":"YuzG","./lib/components/Address":"m1B5","./lib/components/Anchor":"1/MM","./lib/components/Article":"JZ2Y","./lib/components/Aside":"ZLvx","./lib/components/Blockquote":"V8gk","./lib/components/Button":"JpjL","./lib/components/Caption":"N9Uk","./lib/components/Code":"HxBT","./lib/components/Col":"xT1N","./lib/components/ColGroup":"qr8s","./lib/components/Dd":"B90G","./lib/components/DescriptionList":"9MEC","./lib/components/Div":"5TXu","./lib/components/Dt":"c9cn","./lib/components/Em":"3GlH","./lib/components/Fieldset":"0htZ","./lib/components/Figure":"V7cn","./lib/components/Footer":"9FPm","./lib/components/Form":"tEko","./lib/components/Header":"xs1E","./lib/components/Heading":"tvMV","./lib/components/Hgroup":"JcaE","./lib/components/Hr":"ymP+","./lib/components/Image":"u/qP","./lib/components/InputSubmit":"2tPF","./lib/components/InputText":"Xv8q","./lib/components/Label":"afWV","./lib/components/Legend":"6aOW","./lib/components/Li":"inVn","./lib/components/Link":"EgMa","./lib/components/Main":"Nafn","./lib/components/Nav":"lceu","./lib/components/OptGroup":"WGEq","./lib/components/Option":"JlT8","./lib/components/OrderedList":"o9nT","./lib/components/Paragraph":"RCti","./lib/components/Pre":"kKen","./lib/components/Section":"t19E","./lib/components/Small":"yUNd","./lib/components/Span":"iisx","./lib/components/Strong":"i4QE","./lib/components/Sub":"sYDS","./lib/components/Summary":"EAI1","./lib/components/Sup":"l3Dp","./lib/components/UnorderedList":"ZGfX"}]},{},["Focm"], null)
 //# sourceMappingURL=/index.map

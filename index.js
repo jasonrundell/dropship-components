@@ -9,7 +9,10 @@ import Caption from './lib/components/Caption';
 import Code from './lib/components/Code';
 import Col from './lib/components/Col';
 import ColGroup from './lib/components/ColGroup';
+import Dd from './lib/components/Dd';
+import DescriptionList from './lib/components/DescriptionList';
 import Div from './lib/components/Div';
+import Dt from './lib/components/Dt';
 import Em from './lib/components/Em';
 import Fieldset from './lib/components/Fieldset';
 import Figure from './lib/components/Figure';
@@ -54,7 +57,10 @@ export {
   Code,
   Col,
   ColGroup,
+  Dd,
+  DescriptionList,
   Div,
+  Dt,
   Em,
   Fieldset,
   Figure,
