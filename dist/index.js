@@ -1221,6 +1221,7 @@ var Link = function Link(props) {
 
   return _react.default.createElement("a", (_React$createElement = {
     href: props.href,
+    className: props.className,
     rel: props.rel,
     media: props.media,
     as: props.as,
