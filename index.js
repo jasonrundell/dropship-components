@@ -91,5 +91,5 @@ export {
   Sub,
   Summary,
   Sup,
-  UnorderedList
+  UnorderedList,
 };
