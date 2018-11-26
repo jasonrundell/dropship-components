@@ -18,10 +18,10 @@
     "setupTestFrameworkScriptFile": "./setupTests.js"
   },
   "dependencies": {
-    "autoprefixer": "^8.5.0",
+    "autoprefixer": "8.5.0",
     "dropship-components": "github:jasonrundell/dropship-components#feature/1.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
