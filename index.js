@@ -1,6 +1,5 @@
 import Abbr from './lib/components/Abbr';
 import Address from './lib/components/Address';
-import Anchor from './lib/components/Anchor';
 import Article from './lib/components/Article';
 import Aside from './lib/components/Aside';
 import Blockquote from './lib/components/Blockquote';
@@ -48,7 +47,6 @@ import UnorderedList from './lib/components/UnorderedList';
 export {
   Abbr,
   Address,
-  Anchor,
   Article,
   Aside,
   Blockquote,
