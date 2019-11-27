@@ -23,13 +23,27 @@
     "react-dom": "^16.5.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-docs": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/react": "^5.2.6",
+    "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^6.1.0",
     "jest": "^24.9.0",
+    "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.10.0",
     "prettier": "^1.19.1",
+    "react-test-renderer": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "sass-variable-parser": "^1.2.2",
+    "style-loader": "^1.0.0",
     "uuid": "^3.3.2"
   }
 }
